@@ -1,0 +1,23 @@
+/* 谷歌镜像 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC&family=Source+Code+Pro&display=swap');
+/* 国内镜像 */
+/* @import url('https://fonts.proxy.ustclug.org/css2?family=Noto+Serif+SC&family=Source+Code+Pro&display=swap'); */
+
+/* 设置全局字体 */
+body {
+/* 调整全局字体大小 */
+    font-size: 16px;
+    font-family: 'Noto Serif SC', serif;
+}
+
+/* 设置代码块字体 */
+code, pre {
+    font-family: 'Source Code Pro', 'DM Mono', 'Noto Serif SC', monospace;
+}
+
+
+/* 调整标题字体 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 600;
+}
