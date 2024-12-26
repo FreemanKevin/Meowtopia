@@ -1,5 +1,75 @@
-site_name: My Docs
+site_name: Meowtopia
+# GitHub库的名称
+repo_name: 'Meowtopia'
+# GitHub库的链接
+repo_url: 'https://github.com/FreemanKevin/Meowtopia'
+
 nav:
   - Home: index.md
   - About: about.md
-theme: readthedocs
+
+
+
+
+theme:
+  language: 'zh'  # 设置语言为中文
+  name: material
+  icon:
+    repo: fontawesome/brands/github  # 替换默认的 Git 图标为爪印图标
+  palette:
+      - scheme: default  # 明亮模式配色
+        primary: teal    # 柔和的蓝绿色主色
+        accent: amber    # 温暖的琥珀色辅助色
+        toggle:
+          icon: material/toggle-switch-off-outline  # 切换图标（暗模式）
+          name: 切换到暗模式
+      - scheme: slate    # 暗模式配色
+        primary: deep purple  # 深紫色主色，低调且优雅
+        accent: light blue    # 辅助色为柔和的浅蓝色
+        toggle:
+          icon: material/toggle-switch  # 切换图标（亮模式）
+          name: 切换到明亮模式
+  font:
+    text: "Noto Serif SC, serif"
+    code: "Source Code Pro, DM Mono, Noto Serif SC, monospace"
+  features:
+    - header.autohide # 设置标题行自动隐藏
+    - palette-toggle  # 启用明亮/暗模式切换功能
+  logo: assets/favicon.svg  # 网站图标
+  
+
+
+
+
+plugins:
+  - search:
+      lang:
+        - en
+        - zh
+  - macros
+  
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt  # 使用 Font Awesome 的 GitHub 图标
+      link: https://github.com/FreemanKevin
+    - icon: fontawesome/brands/bluesky  # BlueSky 官方图标
+      link: https://bsky.app/profile/freemankevin.bsky.social
+    - icon: fontawesome/brands/mastodon  # Mastodon 官方图标
+      link: https://mastodon.social/@freemankevin
+  favicon: assets/images/favicon.png
+  extra_css:
+    - styles/fonts.css  # 确保文件存在
+
+
+
+# 网站名称
+site_name: Meowtopia
+# 网站描述
+site_description: Meowtopia is a comprehensive blog dedicated to all things related to cats. Here, you'll find a wealth of information covering cat care, behavior, health, nutrition, and much more. Whether you're a new cat owner or a seasoned feline enthusiast, Meowtopia offers valuable insights, tips, and engaging content to help you better understand and care for your furry friends.
+# 作者信息
+site_author: Freeman Kevin
+# 网站链接
+site_url: https://meowtopia.uk/
+# 版权信息
+copyright: "© 2024 ❤️ Freeman Kevin"

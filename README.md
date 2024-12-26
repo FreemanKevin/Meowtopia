@@ -6,6 +6,9 @@
 git clone https://github.com/FreemanKevin/Meowtopia.git
 cd Meowtopia
 
+# install dependencies
+pip install -r requirements.txt
+
 # run the project
 mkdocs build
 mkdocs serve
