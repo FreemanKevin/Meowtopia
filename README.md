@@ -1,6 +1,6 @@
 ## Meowtopia
 
-### Run project
+### Quick Start
 ```shell
 # clone the project
 git clone https://github.com/FreemanKevin/Meowtopia.git
