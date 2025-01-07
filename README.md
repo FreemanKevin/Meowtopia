@@ -1,28 +1,36 @@
 ## Meowtopia
 
-### Quick Start
+### 环境要求
+- Python 3.8 或更高版本
+- pip 包管理器
+
+### 快速开始
 ```shell
-# clone the project
+# 克隆项目
 git clone https://github.com/FreemanKevin/Meowtopia.git
 cd Meowtopia
 
-# install dependencies
-pip install -r requirements.txt
+# 安装依赖
+python -m pip install -r requirements.txt
 
-# run the project
-mkdocs build
-mkdocs serve
+# 运行项目（确保 Python Scripts 目录在环境变量中）
+python -m mkdocs serve
 
-# update the themes
-vim mkdocs.yml
+# 构建项目
+python -m mkdocs build
 
-# deploy the project
-mkdocs build
-mkdocs gh-deploy
+# 部署项目
+python -m mkdocs gh-deploy
 
-# commit the code
+# 提交代码
 git pull
 git add .
-git commit  -m "update files."
+git commit -m "update files."
 git push
 ```
+
+### 故障排除
+如果遇到 'mkdocs command not found' 错误，请确保：
+1. Python 已正确安装
+2. Python Scripts 目录已添加到环境变量
+3. 使用 `python -m mkdocs` 替代直接使用 `mkdocs` 命令
