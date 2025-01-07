@@ -45,10 +45,10 @@ mkdocs gh-deploy
 - Python
 - Giscus 评论系统
 
-## 许可证
-
-[MIT License](LICENSE)
-
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request
+
+## 许可证
+
+[MIT License](LICENSE)
