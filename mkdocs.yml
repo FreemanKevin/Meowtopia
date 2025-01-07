@@ -74,14 +74,14 @@ theme:
     text: Noto Serif SC  # 改为 Noto Serif SC
     code: Source Code Pro
   features:
-    - navigation.tabs        # 启用顶部导航标签
-    - navigation.tabs.sticky # 使导航标签在滚动时保持可见
-    - navigation.sections    # 使用分段显示导航
-    - navigation.top        # 添加返回顶部按钮
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
     - header.autohide
     - palette-toggle
-    - content.action.edit  # 添加编辑按钮
-    - content.action.view  # 添加查看源码按钮
+    - content.action.edit
+    - content.action.view
     - announce.dismiss
   announce: false
   logo: assets/favicon.svg
@@ -100,7 +100,7 @@ plugins:
       blog_dir: blog
       post_date_format: yyyy-MM-dd
       post_url_format: "{date}/{slug}"
-  - tags  # 支持文章标签
+  - tags
   - rss:
       abstract_chars_count: 160
       date_from_meta:
