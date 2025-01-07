@@ -5,37 +5,66 @@ repo_name: 'Meowtopia'
 repo_url: 'https://github.com/FreemanKevin/Meowtopia'
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - 首页: 
+    - 欢迎: index.md
+  - 日常护理:
+    - 概述: blog/care/index.md
+    - 清洁护理: blog/care/grooming.md
+    - 室内养护: blog/care/indoor-care.md
+  - 医疗健康:
+    - 概述: blog/health/index.md
+    - 常见疾病: blog/health/common-disease.md
+    - 疫苗接种: blog/health/vaccination.md
+  - 行为解读:
+    - 概述: blog/behavior/index.md
+    - 身体语言: blog/behavior/body-language.md
+    - 行为训练: blog/behavior/training.md
+  - 营养喂食:
+    - 概述: blog/nutrition/index.md
+    - 喂食指南: blog/nutrition/food-guide.md
+    - 营养建议: blog/nutrition/diet-tips.md
+  - 急救知识:
+    - 概述: blog/emergency/index.md
+    - 基础急救: blog/emergency/first-aid.md
+    - 案例分享: blog/emergency/cases.md
+  - 优质资源:
+    - 概述: blog/resources/index.md
+    - YouTube推荐: blog/resources/youtube.md
+    - 书籍推荐: blog/resources/books.md
+  - 关于: about.md
 
 
 
 
 theme:
-  language: 'zh'  # 设置语言为中文
+  language: 'zh'
   name: material
   icon:
-    repo: fontawesome/brands/github  # 替换默认的 Git 图标为爪印图标
+    repo: fontawesome/brands/github
   palette:
-      - scheme: default  # 明亮模式配色
-        primary: teal    # 柔和的蓝绿色主色
-        accent: amber    # 温暖的琥珀色辅助色
+      - scheme: default
+        primary: teal
+        accent: amber
         toggle:
-          icon: material/toggle-switch-off-outline  # 切换图标（暗模式）
+          icon: material/toggle-switch-off-outline
           name: 切换到暗模式
-      - scheme: slate    # 暗模式配色
-        primary: deep purple  # 深紫色主色，低调且优雅
-        accent: light blue    # 辅助色为柔和的浅蓝色
+      - scheme: slate
+        primary: deep purple
+        accent: light blue
         toggle:
-          icon: material/toggle-switch  # 切换图标（亮模式）
+          icon: material/toggle-switch
           name: 切换到明亮模式
   font:
     text: "Noto Serif SC, serif"
     code: "Source Code Pro, DM Mono, Noto Serif SC, monospace"
   features:
-    - header.autohide # 设置标题行自动隐藏
-    - palette-toggle  # 启用明亮/暗模式切换功能
-  logo: assets/favicon.svg  # 网站图标
+    - navigation.tabs        # 启用顶部导航标签
+    - navigation.tabs.sticky # 使导航标签在滚动时保持可见
+    - navigation.sections    # 使用分段显示导航
+    - navigation.top        # 添加返回顶部按钮
+    - header.autohide
+    - palette-toggle
+  logo: assets/favicon.svg
   
 
 
@@ -47,7 +76,24 @@ plugins:
         - en
         - zh
   - macros
-  
+  - blog:
+      blog_dir: blog
+      post_date_format: yyyy-MM-dd
+      post_url_format: "{date}/{slug}"
+  - tags  # 支持文章标签
+  - rss:
+      abstract_chars_count: 160
+      date_from_meta:
+        as_creation: date
+      enabled: true
+      feed_ttl: 1440
+      length: 20
+
+markdown_extensions:
+  - meta   # 支持文章元数据
+  - toc    # 支持目录
+  - pymdownx.highlight    # 代码高亮
+  - pymdownx.superfences  # 支持代码块
 
 extra:
   social:

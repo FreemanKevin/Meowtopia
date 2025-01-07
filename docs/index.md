@@ -1,23 +1,35 @@
-# Welcome to MkDocs
+# 欢迎来到 Meowtopia
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![猫咪banner](assets/images/banner.png)
 
-## Commands
+Meowtopia 是一个专注于猫咪养护知识分享的网站。无论您是新手铲屎官还是经验丰富的猫咪爱好者，这里都能找到对您有帮助的内容。
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 🐱 内容导航
 
-## Project layout
+### 基础知识
+- **日常护理** - 梳毛、洗澡、环境布置等基础知识
+- **营养喂食** - 科学喂养、营养搭配、零食选择
+- **行为解读** - 猫咪行为语言解读、习性了解
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### 进阶内容
+- **医疗健康** - 常见疾病、预防保健、疫苗接种
+- **急救知识** - 意外处理、急救技巧、就医指南
+- **行为训练** - 如厕训练、互动游戏、坏习惯纠正
 
-## Demo Code Example
-```shell
-mkdir docs/
-echo "Hello World" >> docs/my_example.html
-```
+### 资源分享
+- **优质资源** - YouTube频道推荐、书籍推荐、工具推荐
+- **经验分享** - 养猫心得、案例分析、经验总结
+
+## 🎯 网站目标
+
+1. 提供准确、实用的猫咪养护知识
+2. 分享科学的养猫理念和方法
+3. 整理优质的猫咪相关学习资源
+4. 建立友好的猫咪爱好者交流平台
+
+## 📢 特别说明
+
+本站内容仅供参考，具体医疗问题请务必咨询专业兽医。
+
+[开始阅读](blog/index.md){ .md-button .md-button--primary }
+[加入讨论](about.md#contact){ .md-button }
