@@ -6,6 +6,7 @@ categories:
 tags:
   - 互动游戏
   - 行为培养
+comments: true
 ---
 
 # 猫咪互动游戏指南

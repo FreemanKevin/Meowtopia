@@ -1,14 +1,15 @@
 ---
-title: 急救知识
+title: 猫咪急救知识
 date: 2024-02-28
 categories:
   - 急救知识
 tags:
   - 急救概述
   - 基础知识
+comments: true
 ---
 
-# 猫咪急救知识概述
+# 猫咪急救知识
 
 ## 急救知识的重要性
 

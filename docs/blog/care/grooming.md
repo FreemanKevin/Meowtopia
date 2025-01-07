@@ -6,6 +6,7 @@ categories:
 tags:
   - 清洁护理
   - 美容护理
+comments: true
 ---
 
 # 猫咪清洁护理指南

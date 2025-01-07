@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+    if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
+      document.querySelectorAll('.md-content__button').forEach(button => {
+        button.style.display = 'none';
+      });
+    }
+  </script>
+{% endblock %} 

@@ -25,6 +25,7 @@ nav:
     - 概述: blog/health/index.md
     - 常见疾病: blog/health/common-disease.md
     - 疫苗接种: blog/health/vaccination.md
+    - 医疗资源: blog/health/medical-resources.md
   - 急救知识:
     - 概述: blog/emergency/index.md
     - 基础急救: blog/emergency/first-aid.md
@@ -37,7 +38,8 @@ nav:
   # 资源分享
   - 优质资源:
     - 概述: blog/resources/index.md
-    - YouTube推荐: blog/resources/youtube.md
+    - 优质网站: blog/resources/websites.md
+    - 视频教程: blog/resources/youtube.md
     - 书籍推荐: blog/resources/books.md
     - 工具推荐: blog/resources/tools.md
   - 经验分享:
@@ -45,7 +47,7 @@ nav:
     - 养猫心得: blog/experience/tips.md
     - 案例分析: blog/experience/cases.md
     - 经验总结: blog/experience/summary.md
-  - 关于: about.md
+  - 关于我们: about.md
 
 
 
@@ -78,8 +80,12 @@ theme:
     - navigation.top        # 添加返回顶部按钮
     - header.autohide
     - palette-toggle
+    - content.action.edit  # 添加编辑按钮
+    - content.action.view  # 添加查看源码按钮
+    - announce.dismiss
+  announce: false
   logo: assets/favicon.svg
-  
+  custom_dir: overrides
 
 
 
@@ -122,6 +128,9 @@ extra:
   extra_css:
     - styles/fonts.css  # 确保文件存在
     - stylesheets/extra.css
+  comments:
+    enabled: true
+    discussion_url: https://github.com/FreemanKevin/Meowtopia/discussions/new?category=comments
 
 
 
@@ -135,3 +144,7 @@ site_author: Freeman Kevin
 site_url: https://meowtopia.uk/
 # 版权信息
 copyright: "© 2025 Freeman Kevin"
+
+# 添加编辑配置
+edit_uri: edit/main/docs/  # 指向你的 GitHub 仓库的编辑路径
+repo_url: 'https://github.com/FreemanKevin/Meowtopia'  # 你的 GitHub 仓库地址

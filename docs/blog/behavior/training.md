@@ -6,6 +6,7 @@ categories:
 tags:
   - 行为训练
   - 习惯养成
+comments: true
 ---
 
 # 猫咪行为训练指南

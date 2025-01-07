@@ -3,6 +3,8 @@ title: 首页
 hide:
   - navigation
   - toc
+  - edit
+  - view
 ---
 
 <style>
@@ -12,73 +14,113 @@ hide:
     --md-code-font: "Source Code Pro", "DM Mono", monospace;
 }
 
-/* 大标题使用 Source Code Pro 字体 */
-.hero h1 {
-    font-family: "Source Code Pro", monospace;
-    color: white !important;
-    font-size: 3.5rem !important;
-    margin-bottom: 1.5rem !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.01em;
-}
-
-/* 如果想用 Source Code Pro，可以用这个：
-.hero h1 {
-    font-family: "Source Code Pro", monospace;
-    color: white !important;
-    font-size: 3.5rem !important;
-    margin-bottom: 1.5rem !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.01em;
-}
-*/
-
+/* 基础样式 */
 .hero {
     margin: 0 -2rem;
     padding: 6rem 2rem;
-    background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-        url('/assets/images/banner.png') center/cover;
     color: white;
     text-align: center;
 }
+
+/* 明亮模式样式 */
+[data-md-color-scheme="default"] .hero {
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
+        url('/assets/images/banner.png') center/cover;
+}
+
+/* 暗色模式样式 */
+[data-md-color-scheme="slate"] .hero {
+    background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+        url('/assets/images/banner.png') center/cover;
+}
+
+/* 响应式标题 */
+.hero h1 {
+    font-family: "Source Code Pro", monospace;
+    color: white !important;
+    font-size: clamp(2rem, 5vw, 3.5rem) !important;
+    margin-bottom: 1.5rem !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 响应式段落 */
 .hero p {
-    font-size: 1.25rem;
-    max-width: 42rem;
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    max-width: min(42rem, 90%);
     margin: 1.5rem auto;
-    color: rgba(255,255,255,0.95);
     line-height: 1.6;
+    padding: 0 1rem;
+    white-space: nowrap;
 }
+
+/* 明亮模式文字样式 */
+[data-md-color-scheme="default"] .hero p {
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* 暗色模式文字样式 */
+[data-md-color-scheme="slate"] .hero p {
+    color: rgba(255,255,255,0.85);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* 按钮样式 */
 .hero-buttons {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0 1rem;
 }
+
 .hero-buttons a {
-    margin: 0.5rem;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 1.5rem;
     border-radius: 2rem;
     display: inline-block;
     transition: all 0.2s ease;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    min-width: 120px;
+    text-align: center;
 }
-.hero-buttons a:first-child {
+
+/* 明亮模式按钮样式 */
+[data-md-color-scheme="default"] .hero-buttons a:first-child {
     background: var(--md-primary-fg-color);
     color: var(--md-primary-bg-color);
-    border: 2px solid var(--md-primary-fg-color);
 }
-.hero-buttons a:first-child:hover {
-    background: var(--md-primary-fg-color--dark);
-    border-color: var(--md-primary-fg-color--dark);
-    transform: translateY(-2px);
-}
-.hero-buttons a:last-child {
-    border: 2px solid rgba(255,255,255,0.8);
-    color: white;
-}
-.hero-buttons a:last-child:hover {
+
+[data-md-color-scheme="default"] .hero-buttons a:last-child {
     background: rgba(255,255,255,0.1);
-    transform: translateY(-2px);
+    color: white;
+    backdrop-filter: blur(4px);
 }
+
+/* 暗色模式按钮样式 */
+[data-md-color-scheme="slate"] .hero-buttons a:first-child {
+    background: var(--md-primary-fg-color);
+    color: var(--md-primary-bg-color);
+}
+
+[data-md-color-scheme="slate"] .hero-buttons a:last-child {
+    background: rgba(255,255,255,0.15);
+    color: white;
+    backdrop-filter: blur(4px);
+}
+
+/* 按钮悬停效果 */
+.hero-buttons a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 .features-container {
     margin: 0 -2rem;
     padding: 4rem 2rem;
@@ -86,13 +128,14 @@ hide:
 }
 .features {
     display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 2rem;
     max-width: 1400px;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 .feature {
-    padding: 2.5rem;
+    padding: 2rem;
     border-radius: 12px;
     background: var(--md-code-bg-color);
     text-align: center;
@@ -107,23 +150,37 @@ hide:
     box-shadow: 0 8px 30px rgba(0,0,0,0.12);
 }
 .feature h2 {
-    font-family: "M PLUS Rounded 1c", "Baloo", sans-serif;
-    margin-top: 0;
-    font-size: 1.75rem;
-    color: var(--md-primary-fg-color);
-    margin-bottom: 1.5rem;
+    font-size: clamp(1.5rem, 4vw, 1.75rem);
+    margin-bottom: 1rem;
 }
 .feature p {
-    margin: 0;
-    color: var(--md-typeset-color);
-    line-height: 1.8;
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    line-height: 1.6;
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1rem;
+    }
+    
+    .features-container {
+        padding: 2rem 1rem;
+    }
+    
+    .feature {
+        margin: 0 1rem;
+    }
+    
+    .hero p {
+        white-space: normal;
+    }
 }
 </style>
 
 <section class="hero">
     <h1>Meowtopia</h1>
-    <p>专注于猫咪养护知识分享的网站，为每一位爱猫人士提供专业的养猫指南。让我们一起，为猫咪创造更好的生活。</p>
+    <p>专注于猫咪养护知识分享的网站，为每一位爱猫人士提供专业的养猫指南。</p>
     <div class="hero-buttons">
         <a href="blog/care/beginner-guide/">开始阅读</a>
         <a href="https://discord.gg/nedrgr8n" target="_blank">加入讨论</a>

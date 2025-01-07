@@ -6,6 +6,7 @@ categories:
 tags:
   - 如厕训练
   - 生活习惯
+comments: true
 ---
 
 # 猫咪如厕训练指南

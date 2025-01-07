@@ -6,6 +6,7 @@ categories:
 tags:
   - 疫苗接种
   - 预防保健
+comments: true
 ---
 
 # 猫咪疫苗接种指南

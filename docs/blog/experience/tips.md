@@ -6,6 +6,7 @@ categories:
 tags:
   - 养猫心得
   - 实践经验
+comments: true
 ---
 
 # 养猫心得分享
