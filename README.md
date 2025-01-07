@@ -1,36 +1,55 @@
-## Meowtopia
+# Meowtopia
 
-### 环境要求
-- Python 3.8 或更高版本
-- pip 包管理器
+一个专注于猫咪养护知识分享的网站，为每一位爱猫人士提供专业的养猫指南。
 
-### 快速开始
-```shell
-# 克隆项目
+## 功能特点
+
+- 响应式设计，支持移动端和桌面端
+- 明暗主题切换
+- 评论系统集成（基于 Giscus）
+- 博客文章系统
+- RSS 订阅支持
+- 搜索功能
+
+## 本地开发
+
+1. 克隆仓库：
+```bash
 git clone https://github.com/FreemanKevin/Meowtopia.git
 cd Meowtopia
-
-# 安装依赖
-python -m pip install -r requirements.txt
-
-# 运行项目（确保 Python Scripts 目录在环境变量中）
-python -m mkdocs serve
-
-# 构建项目
-python -m mkdocs build
-
-# 部署项目
-python -m mkdocs gh-deploy
-
-# 提交代码
-git pull
-git add .
-git commit -m "update files."
-git push
 ```
 
-### 故障排除
-如果遇到 'mkdocs command not found' 错误，请确保：
-1. Python 已正确安装
-2. Python Scripts 目录已添加到环境变量
-3. 使用 `python -m mkdocs` 替代直接使用 `mkdocs` 命令
+2. 安装依赖：
+```bash
+pip install -r requirements.txt
+```
+
+3. 本地运行：
+```bash
+mkdocs serve
+```
+
+4. 访问 `http://127.0.0.1:8000` 查看效果
+
+## 部署
+
+本站使用 GitHub Pages 部署：
+
+```bash
+mkdocs gh-deploy
+```
+
+## 技术栈
+
+- MkDocs
+- Material for MkDocs
+- Python
+- Giscus 评论系统
+
+## 许可证
+
+[MIT License](LICENSE)
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request

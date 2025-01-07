@@ -1,5 +1,7 @@
-mkdocs>=1.5.1
-mkdocs-material>=8.5.1
-mkdocs-macros-plugin>=0.8.2
-mkdocs-rss-plugin>=1.12.0
+mkdocs-material>=9.5.0
+mkdocs-macros-plugin>=1.0.4
+mkdocs-rss-plugin>=1.12.1
 mkdocs-blog-plugin>=0.25.0
+mkdocs-git-revision-date-localized-plugin>=1.2.4
+mkdocs-git-committers-plugin-2>=2.2.3
+pymdown-extensions>=10.7
