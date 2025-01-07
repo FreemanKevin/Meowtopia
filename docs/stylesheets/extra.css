@@ -1,0 +1,32 @@
+/* 基础字体设置 */
+:root {
+    --md-text-font: "Source Code Pro", "Noto Serif SC", sans-serif;
+}
+
+/* 确保所有英文字符使用 Source Code Pro */
+* {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 代码块字体 */
+code, pre, kbd {
+    font-family: "Source Code Pro", monospace !important;
+}
+
+/* 导航和页脚 */
+.md-header,
+.md-tabs,
+.md-footer,
+.md-nav {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 确保链接中的英文也使用 Source Code Pro */
+a, a * {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 标题中的英文 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+} 

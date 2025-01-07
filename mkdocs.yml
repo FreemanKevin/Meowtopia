@@ -1,36 +1,50 @@
-site_name: Meowtopia
+site_name: <span class="site-name">Meowtopia</span>
 # GitHub库的名称
 repo_name: 'Meowtopia'
 # GitHub库的链接
 repo_url: 'https://github.com/FreemanKevin/Meowtopia'
 
 nav:
-  - 首页: 
-    - 欢迎: index.md
+  - 首页: index.md
+  # 基础知识
   - 日常护理:
     - 概述: blog/care/index.md
+    - 新手入门: blog/care/beginner-guide.md
     - 清洁护理: blog/care/grooming.md
     - 室内养护: blog/care/indoor-care.md
-  - 医疗健康:
-    - 概述: blog/health/index.md
-    - 常见疾病: blog/health/common-disease.md
-    - 疫苗接种: blog/health/vaccination.md
-  - 行为解读:
-    - 概述: blog/behavior/index.md
-    - 身体语言: blog/behavior/body-language.md
-    - 行为训练: blog/behavior/training.md
   - 营养喂食:
     - 概述: blog/nutrition/index.md
     - 喂食指南: blog/nutrition/food-guide.md
     - 营养建议: blog/nutrition/diet-tips.md
+  - 行为解读:
+    - 概述: blog/behavior/index.md
+    - 身体语言: blog/behavior/body-language.md
+    - 行为训练: blog/behavior/training.md
+  # 进阶内容
+  - 医疗健康:
+    - 概述: blog/health/index.md
+    - 常见疾病: blog/health/common-disease.md
+    - 疫苗接种: blog/health/vaccination.md
   - 急救知识:
     - 概述: blog/emergency/index.md
     - 基础急救: blog/emergency/first-aid.md
     - 案例分享: blog/emergency/cases.md
+  - 行为训练:
+    - 概述: blog/training/index.md
+    - 如厕训练: blog/training/toilet.md
+    - 互动游戏: blog/training/play.md
+    - 行为纠正: blog/training/correction.md
+  # 资源分享
   - 优质资源:
     - 概述: blog/resources/index.md
     - YouTube推荐: blog/resources/youtube.md
     - 书籍推荐: blog/resources/books.md
+    - 工具推荐: blog/resources/tools.md
+  - 经验分享:
+    - 概述: blog/experience/index.md
+    - 养猫心得: blog/experience/tips.md
+    - 案例分析: blog/experience/cases.md
+    - 经验总结: blog/experience/summary.md
   - 关于: about.md
 
 
@@ -55,8 +69,8 @@ theme:
           icon: material/toggle-switch
           name: 切换到明亮模式
   font:
-    text: "Noto Serif SC, serif"
-    code: "Source Code Pro, DM Mono, Noto Serif SC, monospace"
+    text: Noto Serif SC  # 改为 Noto Serif SC
+    code: Source Code Pro
   features:
     - navigation.tabs        # 启用顶部导航标签
     - navigation.tabs.sticky # 使导航标签在滚动时保持可见
@@ -92,6 +106,7 @@ plugins:
 markdown_extensions:
   - meta   # 支持文章元数据
   - toc    # 支持目录
+  - attr_list  # 添加这一行
   - pymdownx.highlight    # 代码高亮
   - pymdownx.superfences  # 支持代码块
 
@@ -106,6 +121,7 @@ extra:
   favicon: assets/images/favicon.png
   extra_css:
     - styles/fonts.css  # 确保文件存在
+    - stylesheets/extra.css
 
 
 

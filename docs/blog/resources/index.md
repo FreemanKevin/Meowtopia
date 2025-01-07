@@ -1,5 +1,5 @@
 ---
-title: 猫咪养护优质资源
+title: 优质资源
 date: 2024-02-28
 categories:
   - 学习资源

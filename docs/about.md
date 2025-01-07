@@ -1,57 +1,37 @@
-# 关于 Meowtopia
+# 关于我们
 
-## 🎯 网站简介
+## 🏗️ 项目介绍
 
-Meowtopia 的名字来源于 "Meow"（猫叫声）和 "Utopia"（理想国）的组合，寓意着为猫咪创造理想的生活环境。
+<span class="english">Meowtopia</span> 是一个开源的猫咪养护知识分享平台。
 
-本站致力于：
-- 分享科学的猫咪养护知识
-- 传播正确的养宠理念
-- 整理优质的学习资源
-- 记录养猫生活点滴
+我们致力于：
 
-## 👤 关于作者
+- 提供准确、实用的猫咪养护知识
+- 分享科学的养猫理念和方法
+- 整理优质的猫咪相关学习资源
+- 建立友好的猫咪爱好者交流平台
 
-我是一名猫咪爱好者，同时也是一位程序员。
+## 📢 特别说明
 
+本站内容仅供参考，具体医疗问题请务必咨询专业兽医。
 
-建立这个网站的初衷是为了：
+我们致力于提供准确的信息，但每只猫咪都是独特的个体，在处理具体问题时还需结合实际情况。
 
-- 系统整理猫咪相关知识
-- 分享个人养猫经验
-- 收集优质学习资源
-- 与其他爱猫人士交流
+## 🤝 参与交流
 
-## 📝 内容来源
+### 💬 社区讨论
+欢迎加入我们的 [Discord 社区](https://discord.gg/nedrgr8n)，与其他爱猫人士交流经验、分享心得。
 
-本站内容主要来自：
+### 📝 内容贡献
+- 在 [GitHub](https://github.com/FreemanKevin/Meowtopia) 上提交 PR 或 Issue
+- 在评论区分享您的经验和见解
 
-- 个人养猫经验总结
-- 兽医咨询记录
-- YouTube优质视频学习
-- 专业书籍阅读笔记
-- 社区交流心得
+## 🔗 关注我们
 
-## ⚠️ 免责声明
+- GitHub: <span class="english">[@FreemanKevin](https://github.com/FreemanKevin)</span>
+- BlueSky: <span class="english">[@freemankevin.bsky.social](https://bsky.app/profile/freemankevin.bsky.social)</span>
+- Mastodon: <span class="english">[@freemankevin@mastodon.social](https://mastodon.social/@freemankevin)</span>
 
-本站内容仅供参考，不构成任何医疗建议。具体医疗问题请务必咨询专业兽医。
+## 📄 版权说明
 
-## 📫 联系方式
-
-- GitHub: [FreemanKevin](https://github.com/FreemanKevin)
-- BlueSky: [@freemankevin.bsky.social](https://bsky.app/profile/freemankevin.bsky.social)
-- Mastodon: [@freemankevin@mastodon.social](https://mastodon.social/@freemankevin)
-
-## 🤝 参与贡献
-
-如果您发现内容有误或想要补充，欢迎：
-
-1. 在 GitHub 上提交 Issue 或 Pull Request
-2. 通过社交媒体与我联系
-3. 在评论区留言讨论
-
-
-
-## 📜 版权说明
-
-除特别注明外，本站所有内容均采用 [MIT 许可协议](https://github.com/FreemanKevin/Meowtopia/blob/main/LICENSE)。 
+本站内容采用 [MIT 许可协议](https://github.com/FreemanKevin/Meowtopia/blob/main/LICENSE) 发布。 
