@@ -50,9 +50,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
 }
 
-/* 隐藏首页和关于页面的编辑和查看源码按钮 */
-[data-md-component="hero"] ~ .md-content .md-content__button,
-body[data-url="/about/"] .md-content__button,
-body[data-url="/about"] .md-content__button {
-    display: none;
+/* 隐藏首页的编辑和查看源码按钮 */
+[data-md-component="hero"] ~ .md-content .md-content__button {
+    display: none !important;
 }
