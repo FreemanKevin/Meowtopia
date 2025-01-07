@@ -54,3 +54,41 @@ h1, h2, h3, h4, h5, h6 {
 [data-md-component="hero"] ~ .md-content .md-content__button {
     display: none !important;
 }
+
+/* 顶部导航菜单悬停效果 */
+.md-tabs__item {
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: center bottom;
+}
+
+.md-tabs__item:hover .md-tabs__link {
+    transform: scale(1.5);
+    display: inline-block;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* 当前激活的导航项样式 */
+.md-tabs__item--active:hover .md-tabs__link {
+    transform: scale(1.5);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* 顶部导航菜单样式 */
+.md-tabs__link {
+    font-size: 1.25rem !important;     /* 更大的字体大小 */
+    font-weight: 500;                   /* 稍微加粗 */
+    padding: 0.7rem 1rem;              /* 更大的内边距 */
+    transition: color 0.2s ease;        /* 只保留颜色过渡效果 */
+}
+
+/* 当前激活的导航项样式 */
+.md-tabs__link--active {
+    font-weight: 600;                   /* 当前项更粗一些 */
+}
+
+/* 确保有足够的空间 */
+.md-tabs__list {
+    padding: 0.7rem 0;                 /* 增加上下空间 */
+}
