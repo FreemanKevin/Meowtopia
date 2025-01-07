@@ -29,4 +29,28 @@ a, a * {
 /* 标题中的英文 */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
-} 
+}
+
+/* 评论区样式 */
+.comments {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] .comments {
+  background-color: var(--md-default-bg-color);
+}
+
+[data-md-color-scheme="default"] .comments {
+  background-color: var(--md-default-bg-color);
+}
+
+.giscus {
+  margin-top: 1rem;
+}
+
+/* 隐藏首页的编辑和查看源码按钮 */
+[data-md-component="hero"] ~ .md-content .md-content__button {
+    display: none !important;
+}
