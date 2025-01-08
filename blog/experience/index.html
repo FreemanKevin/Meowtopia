@@ -1170,12 +1170,12 @@
 <li><a href="summary/">经验总结</a></li>
 </ul>
 <h2 id="_4">分享目的</h2>
-<ol>
+<ul>
 <li>交流经验</li>
 <li>避免误区</li>
 <li>解决问题</li>
 <li>共同进步</li>
-</ol>
+</ul>
 <h2 id="_5">参与方式</h2>
 <h3 id="_6">如何分享</h3>
 <ul>
@@ -1219,6 +1219,56 @@
     </script>
   </div>
 
+
+<script>
+  // 在页面加载完成后初始化
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取当前主题
+    const getTheme = () => document.body.getAttribute('data-md-color-scheme') === 'slate' ? 'dark' : 'light';
+    
+    // 更新 Giscus 主题
+    const updateGiscusTheme = () => {
+      const theme = getTheme();
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          'https://giscus.app'
+        );
+      }
+    };
+
+    // 监听主题切换
+    const observer = new MutationObserver(() => {
+      updateGiscusTheme();
+    });
+
+    // 开始监听
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['data-md-color-scheme']
+    });
+
+    // 监听 iframe 加载
+    const commentsContainer = document.querySelector('.comments');
+    if (commentsContainer) {
+      const iframeObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (node.tagName === 'IFRAME' && node.classList.contains('giscus-frame')) {
+              updateGiscusTheme();
+            }
+          });
+        });
+      });
+
+      iframeObserver.observe(commentsContainer, {
+        childList: true,
+        subtree: true
+      });
+    }
+  });
+</script>
                 
               </article>
             </div>

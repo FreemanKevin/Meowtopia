@@ -1017,7 +1017,7 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      ✂️ 美容工具
+      💇 美容工具
     </span>
   </a>
   
@@ -1050,7 +1050,7 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      🍽️ 喂食工具
+      🍽 喂食工具
     </span>
   </a>
   
@@ -1232,7 +1232,7 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      ✂️ 美容工具
+      💇 美容工具
     </span>
   </a>
   
@@ -1265,7 +1265,7 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      🍽️ 喂食工具
+      🍽 喂食工具
     </span>
   </a>
   
@@ -1367,7 +1367,7 @@
 <li>清洁喷剂</li>
 <li>消毒用品</li>
 </ul>
-<h3 id="_3">✂️ 美容工具</h3>
+<h3 id="_3">💇 美容工具</h3>
 <ul>
 <li>梳子系列</li>
 <li>指甲剪</li>
@@ -1382,7 +1382,7 @@
 <li>除臭产品</li>
 <li>清洁工具</li>
 </ul>
-<h3 id="_6">🍽️ 喂食工具</h3>
+<h3 id="_6">🍽 喂食工具</h3>
 <ul>
 <li>食盆推荐</li>
 <li>饮水机选择</li>
@@ -1439,6 +1439,56 @@
     </script>
   </div>
 
+
+<script>
+  // 在页面加载完成后初始化
+  document.addEventListener('DOMContentLoaded', function() {
+    // 获取当前主题
+    const getTheme = () => document.body.getAttribute('data-md-color-scheme') === 'slate' ? 'dark' : 'light';
+    
+    // 更新 Giscus 主题
+    const updateGiscusTheme = () => {
+      const theme = getTheme();
+      const iframe = document.querySelector('iframe.giscus-frame');
+      if (iframe) {
+        iframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme } } },
+          'https://giscus.app'
+        );
+      }
+    };
+
+    // 监听主题切换
+    const observer = new MutationObserver(() => {
+      updateGiscusTheme();
+    });
+
+    // 开始监听
+    observer.observe(document.body, {
+      attributes: true,
+      attributeFilter: ['data-md-color-scheme']
+    });
+
+    // 监听 iframe 加载
+    const commentsContainer = document.querySelector('.comments');
+    if (commentsContainer) {
+      const iframeObserver = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          mutation.addedNodes.forEach((node) => {
+            if (node.tagName === 'IFRAME' && node.classList.contains('giscus-frame')) {
+              updateGiscusTheme();
+            }
+          });
+        });
+      });
+
+      iframeObserver.observe(commentsContainer, {
+        childList: true,
+        subtree: true
+      });
+    }
+  });
+</script>
                 
               </article>
             </div>
