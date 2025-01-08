@@ -1,6 +1,11 @@
 ---
-title: 日常护理
-description: 猫咪日常护理指南
+title: 日常护理指南
+date: 2024-02-28
+categories:
+  - 日常护理
+tags:
+  - 护理指南
+  - 生活照顾
 comments: true
 ---
 

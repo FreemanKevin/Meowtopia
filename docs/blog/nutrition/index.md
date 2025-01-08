@@ -1,6 +1,11 @@
 ---
-title: 营养喂食
-description: 猫咪营养与喂食指南
+title: 营养喂食指南
+date: 2024-02-28
+categories:
+  - 营养喂食
+tags:
+  - 饮食管理
+  - 营养搭配
 comments: true
 ---
 

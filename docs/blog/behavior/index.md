@@ -1,6 +1,11 @@
 ---
-title: 行为解读
-description: 猫咪行为解读指南
+title: 行为解读指南
+date: 2024-02-28
+categories:
+  - 行为训练
+tags:
+  - 行为解读
+  - 训练技巧
 comments: true
 ---
 

@@ -135,3 +135,58 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1 !important;
   background-color: var(--md-primary-fg-color);
 }
+
+/* 优化移动端导航按钮样式 */
+.md-footer__button {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 确保导航文字在移动端显示 */
+.md-footer__title {
+  height: auto !important;
+  opacity: 1 !important;
+  max-height: none !important;
+}
+
+/* 优化移动端导航文字显示 */
+.md-footer__direction {
+  position: static !important;
+  height: auto !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* 移动端导航标题样式 */
+.md-footer__link--prev .md-footer__title,
+.md-footer__link--next .md-footer__title {
+  display: block !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 76.1875em) {
+  .md-footer-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .md-footer__link {
+    display: flex !important;
+    padding: 0.5rem 1rem !important;
+    width: auto !important;
+  }
+  
+  .md-footer__title {
+    font-size: 0.8rem !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+  
+  .md-footer__direction {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+}

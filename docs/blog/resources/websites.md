@@ -9,53 +9,96 @@ tags:
 comments: true
 ---
 
-## 🏥 医疗健康类
+## 😺 基础入门类
 
-### [The Cat Doctor](https://www.catdoctor.com/)
+### 🌟 [The Spruce Pets](https://www.thesprucepets.com/cats-4162124)
 **特色内容**
 
-- 专注猫咪健康和医疗
+- 猫咪基础护理知识
+
+- 新手养猫指南
+
+- 日常行为解读
+
+- 环境布置建议
+
+### 📖 [Petfinder's Cat Care](https://www.petfinder.com/cats/cat-care/)
+**特色内容**
+
+- 基础喂养指南
+
+- 日常清洁技巧
+
+- 新手常见问题
+
+- 互动游戏建议
+
+## 🏥 医疗健康类
+
+### 🚑 [VCA Animal Hospitals](https://vcahospitals.com/know-your-pet/cats)
+**特色内容**
+
+- 专业医疗知识
+
+- 疾病诊断指南
+
+- 预防保健建议
+
+- 急救处理方法
+
+### 💉 [The Cat Doctor](https://www.catdoctor.com/)
+**特色内容**
+
+- 专注猫咪健康
 
 - 常见疾病资讯
 
 - 预防接种指南
 
-### [AAFP](https://www.catvets.com/)
+- 营养膳食建议
+
+## 👨‍⚕️ 专业进阶类
+
+### 🔬 [AAFP](https://www.catvets.com/)
 **特色内容**
 
 - 国际性猫科医师组织
 
-- 专业医疗资源
+- 专业医疗资源库
 
 - 深度健康文章
 
----
-## 💡 护理知识类
+- 临床案例分析
 
-### [PetMD](https://www.petmd.com/cat)
+### 📋 [ISFM](https://icatcare.org/veterinary/)
 **特色内容**
 
-- 全面的猫咪护理指南
-- 健康管理建议
-- 营养饮食知识
+- 国际猫科医学协会
 
-### [Cats Protection](https://www.cats.org.uk/)
-**特色内容**
+- 专业医学研究
 
-- 新手友好的护理建议
+- 临床诊疗指南
 
-- 基础照顾指南
-
-- 行为训练技巧
+- 继续教育资源
 
 ---
-## 🔬 专科资源
 
-### [Feline Diabetes](http://www.felinediabetes.com/)
-**特色内容**
+## 💡 学习建议
 
-- 猫咪糖尿病专题
+### 🌱 入门阶段
 
-- 疾病管理指南
+- 从 The Spruce Pets 和 Petfinder 开始学习基础知识
 
-- 治疗方案建议 
+- 重点关注日常护理和基本行为解读
+
+### 🌿 进阶阶段
+
+- 通过 VCA 和 The Cat Doctor 深入了解健康知识
+
+- 学习疾病预防和基础医疗常识
+
+### 🌳 专业阶段
+
+- 参考 AAFP 和 ISFM 的专业资源
+
+- 研究深度医疗知识和临床案例 

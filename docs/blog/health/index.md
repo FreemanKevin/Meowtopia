@@ -1,6 +1,11 @@
 ---
-title: 医疗健康
-description: 猫咪医疗与健康指南
+title: 医疗健康指南
+date: 2024-02-28
+categories:
+  - 医疗健康
+tags:
+  - 疾病预防
+  - 健康管理
 comments: true
 ---
 
