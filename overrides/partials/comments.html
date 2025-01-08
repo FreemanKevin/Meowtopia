@@ -1,7 +1,6 @@
 {% if page.meta.comments %}
   <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
   <div class="comments">
-    <!-- 根据当前主题设置初始主题 -->
     {% set theme = "dark" if config.theme.palette[0].scheme == "slate" else "light" %}
     <script src="https://giscus.app/client.js"
         data-repo="FreemanKevin/Meowtopia"
@@ -23,13 +22,12 @@
 {% endif %}
 
 <script>
-  // 监听主题切换事件
   var palette = __md_get("__palette")
   if (palette && typeof palette.color === "object") {
-    var theme = palette.color.scheme === "slate" ? "dark" : "light"
+    var theme = palette.color.scheme === "slate" ?"dark" : "light"
     
     palette.color.subscribe(function(color) {
-      var theme = color.scheme === "slate" ? "dark" : "light"
+      var theme = color.scheme === "slate" ? "dark": "light"
       var frame = document.querySelector('.giscus-frame')
       if (frame) {
         frame.contentWindow.postMessage(
