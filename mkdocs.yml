@@ -75,14 +75,25 @@ theme:
     code: Source Code Pro
   features:
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.top
-    - header.autohide
-    - palette-toggle
+    # - navigation.tabs.sticky  # 固定标签导航栏
+    - navigation.top       # 返回顶部按钮
+    - navigation.tracking  # 在 URL 中跟踪当前位置
+    - navigation.footer     # 显示上一页/下一页导航
+    - navigation.indexes    # 支持章节索引页面
+    - navigation.instant  # 即时加载页面
+    - navigation.instant.prefetch  # 预加载链接页面
+    - navigation.instant.progress  # 显示加载进度条
+    - navigation.prune    # 修剪导航树
+    # - header.autohide
+    - search.highlight
+    - search.share
+    - search.suggest
     - content.action.edit
     - content.action.view
     - announce.dismiss
+    - toc.follow         # 目录跟随滚动
+    # - toc.integrate    # 将目录集成到导航面板中
   announce: false
   logo: assets/favicon.svg
   custom_dir: overrides

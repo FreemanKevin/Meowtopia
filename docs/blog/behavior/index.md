@@ -1,3 +1,9 @@
+---
+title: 行为解读
+description: 猫咪行为解读指南
+comments: true
+---
+
 # 猫咪行为解读
 
 本栏目帮助您理解猫咪的行为语言：

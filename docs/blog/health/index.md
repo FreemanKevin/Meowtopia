@@ -1,3 +1,9 @@
+---
+title: 医疗健康
+description: 猫咪医疗与健康指南
+comments: true
+---
+
 # 猫咪医疗健康
 
 本栏目包含猫咪医疗健康相关知识：
