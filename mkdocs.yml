@@ -94,6 +94,7 @@ theme:
     - announce.dismiss
     - toc.follow         # 目录跟随滚动
     # - toc.integrate    # 将目录集成到导航面板中
+    - content.code.copy
   announce: false
   logo: assets/favicon.svg
   custom_dir: overrides
