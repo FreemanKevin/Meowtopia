@@ -1,0 +1,88 @@
+:root {
+    --body-bg-color: #eee;
+    --content-bg-color: #fff;
+    --card-bg-color: #f5f5f5;
+    --text-color: #555;
+    --selection-bg: #262a30;
+    --selection-color: #eee;
+    --blockquote-color: #666;
+    --link-color: #555;
+    --link-hover-color: #222;
+    --brand-color: #fff;
+    --brand-hover-color: #fff;
+    --table-row-odd-bg-color: #f9f9f9;
+    --table-row-hover-bg-color: #f5f5f5;
+    --menu-item-bg-color: #f5f5f5;
+    --theme-color: #222;
+    --btn-default-bg: #fff;
+    --btn-default-color: #555;
+    --btn-default-border-color: #555;
+    --btn-default-hover-bg: #222;
+    --btn-default-hover-color: #fff;
+    --btn-default-hover-border-color: #222;
+    --highlight-background: #f3f3f3;
+    --highlight-foreground: #444;
+    --highlight-gutter-background: #e1e1e1;
+    --highlight-gutter-foreground: #555;
+}
+
+/* 应用全局背景和内容背景 */
+body {
+    background-color: var(--body-bg-color);
+    color: var(--text-color);
+}
+
+/* 内容区背景 */
+.md-content {
+    background-color: var(--content-bg-color);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 链接样式 */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+/* 按钮样式 */
+.md-button {
+    background-color: var(--btn-default-bg);
+    color: var(--btn-default-color);
+    border: 1px solid var(--btn-default-border-color);
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+.md-button:hover {
+    background-color: var(--btn-default-hover-bg);
+    color: var(--btn-default-hover-color);
+    border-color: var(--btn-default-hover-border-color);
+}
+
+/* 高亮代码块样式 */
+pre {
+    background-color: var(--highlight-background);
+    color: var(--highlight-foreground);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+pre .hljs-line-numbers {
+    background-color: var(--highlight-gutter-background);
+    color: var(--highlight-gutter-foreground);
+}
+
+/* 表格样式 */
+tr:nth-child(odd) {
+    background-color: var(--table-row-odd-bg-color);
+}
+
+tr:hover {
+    background-color: var(--table-row-hover-bg-color);
+}
