@@ -30,7 +30,6 @@ hide:
 
 ### 📝 内容贡献
 - 在 [GitHub](https://github.com/FreemanKevin/Meowtopia) 上提交 PR 或 Issue
-- 在评论区分享您的经验和见解
 
 ## 🔗 关注我们
 

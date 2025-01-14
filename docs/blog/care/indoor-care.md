@@ -6,7 +6,6 @@ categories:
 tags:
   - 环境布置
   - 生活起居
-comments: true
 ---
 
 # 室内猫咪环境布置

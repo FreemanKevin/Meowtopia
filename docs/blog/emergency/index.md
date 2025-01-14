@@ -6,7 +6,6 @@ categories:
 tags:
   - 急救概述
   - 基础知识
-comments: true
 ---
 
 # 猫咪急救知识

@@ -6,7 +6,6 @@ categories:
 tags:
   - 疾病预防
   - 基础医疗
-comments: true
 ---
 
 # 猫咪常见疾病预防与治疗

@@ -6,7 +6,6 @@ categories:
 tags:
   - 行为解读
   - 训练技巧
-comments: true
 ---
 
 # 猫咪行为解读

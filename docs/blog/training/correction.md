@@ -6,7 +6,6 @@ categories:
 tags:
   - 行为纠正
   - 习惯培养
-comments: true
 ---
 
 # 猫咪行为纠正指南

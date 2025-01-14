@@ -6,7 +6,6 @@ categories:
 tags:
   - 护理指南
   - 生活照顾
-comments: true
 ---
 
 # 猫咪日常护理

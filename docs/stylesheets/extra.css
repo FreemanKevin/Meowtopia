@@ -31,25 +31,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
 }
 
-/* 评论区样式 */
-.comments {
-  margin: 2rem 0;
-  padding: 1rem;
-  border-radius: 4px;
-}
-
-[data-md-color-scheme="slate"] .comments {
-  background-color: var(--md-default-bg-color);
-}
-
-[data-md-color-scheme="default"] .comments {
-  background-color: var(--md-default-bg-color);
-}
-
-.giscus {
-  margin-top: 1rem;
-}
-
 /* 隐藏首页的编辑和查看源码按钮 */
 [data-md-component="hero"] ~ .md-content .md-content__button {
     display: none !important;
@@ -189,4 +170,78 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.7rem !important;
     margin-bottom: 0.2rem !important;
   }
+}
+/* 移除 about 页面的编辑和查看按钮 - 使用更精确的选择器 */
+body[data-url^="/about/"] .md-content__button {
+    display: none !important;
+}
+
+/* 或者使用这个选择器 */
+.md-content__inner:has(h1:first-of-type:contains("关于我们")) .md-content__button {
+    display: none !important;
+}
+
+/* 如果上面的方法都不起作用，可以尝试这个更通用的选择器 */
+article:has(#关于我们) .md-content__button {
+    display: none !important;
+}
+
+/* 搜索框样式优化 */
+.md-search__form {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    min-width: 15rem;  /* 设置最小宽度 */
+}
+
+/* 搜索框悬停效果 */
+.md-search__form:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* 搜索框获得焦点时的效果 */
+.md-search__form:focus-within {
+    background-color: var(--md-default-bg-color);
+    box-shadow: 0 0 0.8rem rgba(0,0,0,.1);
+}
+
+/* 搜索输入框样式 */
+.md-search__input {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* 搜索图标样式 */
+.md-search__icon {
+    color: var(--md-primary-bg-color);
+    opacity: 0.8;
+}
+
+/* 搜索框获得焦点时的图标样式 */
+.md-search__form:focus-within .md-search__icon {
+    color: var(--md-primary-fg-color);
+}
+
+/* 调整搜索框在移动端的显示 */
+@media screen and (min-width: 60em) {
+    .md-search__form {
+        width: 23rem;  /* 在桌面端设置更宽的搜索框 */
+    }
+}
+
+/* 搜索结果弹窗样式 */
+.md-search__output {
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+
+/* 搜索结果项样式 */
+.md-search-result__item {
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.md-search-result__item:hover {
+    background-color: var(--md-code-bg-color);
 }

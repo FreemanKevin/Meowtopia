@@ -6,7 +6,6 @@ categories:
 tags:
   - 疾病预防
   - 健康管理
-comments: true
 ---
 
 # 猫咪医疗健康

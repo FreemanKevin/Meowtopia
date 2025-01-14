@@ -6,7 +6,6 @@ categories:
 tags:
   - 训练方法
   - 行为矫正
-comments: true
 ---
 
 # 猫咪行为训练

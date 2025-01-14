@@ -6,7 +6,6 @@ categories:
 tags:
   - 医疗资源
   - 健康知识
-comments: true
 ---
 
 # 猫咪医疗资源指南

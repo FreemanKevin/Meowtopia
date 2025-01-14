@@ -6,7 +6,6 @@ categories:
 tags:
   - 新手指南
   - 基础知识
-comments: true
 ---
 
 # 新手养猫入门指南
