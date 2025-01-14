@@ -4,39 +4,62 @@ hide:
   - view
 ---
 
-# 关于我们
+## 🎯 项目初衷
+喵托邦 (Meowtopia) 致力于为养猫爱好者提供全面、专业的猫咪知识平台。我们希望通过知识分享，帮助更多人成为合格的"铲屎官"，让猫咪过上更好的生活。
 
-## 🏗️ 项目介绍
+## 🌟 核心特色
 
-<span class="english">Meowtopia</span> 是一个开源的猫咪养护知识分享平台。
+- 专业性：汇集兽医、行为学家、营养师等专业人士的建议
+- 实用性：提供可操作的养猫指南和解决方案
+- 系统性：涵盖养猫所需的各个方面知识
+- 持续性：定期更新最新的研究成果和实践经验
 
-我们致力于：
+## 📚 内容体系
 
-- 提供准确、实用的猫咪养护知识
-- 分享科学的养猫理念和方法
-- 整理优质的猫咪相关学习资源
-- 建立友好的猫咪爱好者交流平台
+- 基础知识：新手入门指南、品种介绍
+- 日常护理：喂养、清洁、美容等
+- 行为训练：行为解读、问题纠正
+- 医疗健康：疾病预防、急救知识
+- 环境布置：猫咪友好的家居设计
+- 社会责任：动物福利、流浪猫救助
 
-## 📢 特别说明
+## 🤝 参与贡献
+我们欢迎所有爱猫人士参与内容建设：
 
-本站内容仅供参考，具体医疗问题请务必咨询专业兽医。
+- 分享经验：实践中的经验教训
+- 提供建议：内容改进和功能优化
+- 技术支持：网站开发和维护
+- 资源推荐：优质的学习资料
 
-我们致力于提供准确的信息，但每只猫咪都是独特的个体，在处理具体问题时还需结合实际情况。
+## 💬 社群交流
+欢迎加入我们的社区：
 
-## 🤝 参与交流
+- Discord: [Discord 社区](https://discord.gg/ePNtxruT)
+- Telegram: [Telegram群组](https://t.me/meowtopia)
 
-### 💬 社区讨论
-欢迎加入我们的 [Discord 社区](https://discord.gg/nedrgr8n)，与其他爱猫人士交流经验、分享心得。
+在这里你可以：
 
-### 📝 内容贡献
-- 在 [GitHub](https://github.com/FreemanKevin/Meowtopia) 上提交 PR 或 Issue
+- 分享养猫经验和趣事
+- 交流护理心得
+- 分享可爱的猫咪照片
+- 结识其他爱猫人士
 
-## 🔗 关注我们
+## 📬 联系方式
 
-- GitHub: <span class="english">[@FreemanKevin](https://github.com/FreemanKevin)</span>
-- BlueSky: <span class="english">[@freemankevin.bsky.social](https://bsky.app/profile/freemankevin.bsky.social)</span>
-- Mastodon: <span class="english">[@freemankevin@mastodon.social](https://mastodon.social/@freemankevin)</span>
+- GitHub: [项目地址](https://github.com/yourusername/meowtopia)
+- Email: contact@meowtopia.com
 
-## 📄 版权说明
+## 🙏 特别感谢
+感谢所有为喵托邦贡献内容和提供帮助的朋友们。正是你们的支持，让这个项目能够不断成长和完善。
 
-本站内容采用 [MIT 许可协议](https://github.com/FreemanKevin/Meowtopia/blob/main/LICENSE) 发布。 
+## 🔮 未来展望
+我们期待将喵托邦打造成：
+
+- 最专业的中文猫咪知识库
+- 最活跃的养猫爱好者社区
+- 最可靠的猫咪资源导航平台
+
+让我们一起，为猫咪创造更美好的生活！
+
+## ⚠️ 温馨提示
+本站内容仅供参考。每只猫咪都是独特的个体，遇到具体问题时请及时咨询专业兽医。

@@ -1,11 +1,17 @@
 /* 基础字体设置 */
 :root {
-    --md-text-font: "Source Code Pro", "Noto Serif SC", sans-serif;
+    --md-text-font: "Source Code Pro", "Noto Serif SC";
+    --md-code-font: "Source Code Pro";
 }
 
-/* 确保所有英文字符使用 Source Code Pro */
-* {
-    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+/* 确保英文使用 Source Code Pro */
+[lang="en"], .slogan, .hero h1 {
+    font-family: "Source Code Pro", monospace !important;
+}
+
+/* 中文内容使用 Noto Serif SC */
+[lang="zh"] {
+    font-family: "Noto Serif SC", sans-serif !important;
 }
 
 /* 代码块字体 */
@@ -31,11 +37,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
 }
 
-/* 隐藏首页的编辑和查看源码按钮 */
-[data-md-component="hero"] ~ .md-content .md-content__button {
-    display: none !important;
-}
-
 /* 顶部导航菜单悬停效果 */
 .md-tabs__item {
     transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -58,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 顶部导航菜单样式 */
 .md-tabs__link {
-    font-size: 1.25rem !important;     /* 更大的字体大小 */
+    font-size: 2.5rem !important;      /* 字体大小增加一倍 */
     font-weight: 500;                   /* 稍微加粗 */
     padding: 0.7rem 1rem;              /* 更大的内边距 */
     transition: color 0.2s ease;        /* 只保留颜色过渡效果 */
@@ -71,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 确保有足够的空间 */
 .md-tabs__list {
-    padding: 0.7rem 0;                 /* 增加上下空间 */
+    padding: 1rem 0;                   /* 增加更多上下空间以适应更大的字体 */
 }
 
 /* 固定导航栏样式优化 */
@@ -96,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 调整主要内容区域的上边距 */
 .md-main {
-  margin-top: 7rem !important;
+  margin-top: 9rem !important;
 }
 
 /* 优化固定导航栏的阴影效果 */
@@ -171,20 +172,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.2rem !important;
   }
 }
-/* 移除 about 页面的编辑和查看按钮 - 使用更精确的选择器 */
-body[data-url^="/about/"] .md-content__button {
-    display: none !important;
-}
-
-/* 或者使用这个选择器 */
-.md-content__inner:has(h1:first-of-type:contains("关于我们")) .md-content__button {
-    display: none !important;
-}
-
-/* 如果上面的方法都不起作用，可以尝试这个更通用的选择器 */
-article:has(#关于我们) .md-content__button {
-    display: none !important;
-}
 
 /* 搜索框样式优化 */
 .md-search__form {
@@ -244,4 +231,22 @@ article:has(#关于我们) .md-content__button {
 
 .md-search-result__item:hover {
     background-color: var(--md-code-bg-color);
+}
+
+/* 正文字体 */
+body {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 标题字体 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: 600;
+}
+
+/* 代码字体 */
+code, pre {
+  font-family: "Source Code Pro", "JetBrains Mono", monospace;
 }

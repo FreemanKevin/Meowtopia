@@ -48,6 +48,17 @@ hide:
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
+/* 副标题样式 */
+.hero h2 {
+    font-family: "Source Code Pro", monospace;
+    color: white !important;
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem) !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.01em;
+    margin-top: 0 !important;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
 /* 响应式段落 */
 .hero p {
     font-size: clamp(1rem, 3vw, 1.25rem);
@@ -127,20 +138,22 @@ hide:
     background: var(--md-default-bg-color);
 }
 .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 2rem;
-    max-width: 1400px;
+    max-width: 2400px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 .feature {
+    flex: 1;
+    min-width: 0;
     padding: 2rem;
     border-radius: 12px;
     background: var(--md-code-bg-color);
     text-align: center;
     transition: all 0.3s ease;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -156,6 +169,8 @@ hide:
 .feature p {
     font-size: clamp(0.9rem, 2.5vw, 1.1rem);
     line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* 移动端优化 */
@@ -180,10 +195,10 @@ hide:
 
 <section class="hero">
     <h1>Meowtopia</h1>
-    <p>专注于猫咪养护知识分享的网站，为每一位爱猫人士提供专业的养猫指南。</p>
+    <h2>Protecting Every Cat with Love and Knowledge</h2>
     <div class="hero-buttons">
         <a href="blog/care/beginner-guide/">开始阅读</a>
-        <a href="https://discord.gg/nedrgr8n" target="_blank">加入讨论</a>
+        <a href="https://discord.gg/ePNtxruT" target="_blank">加入讨论</a>
     </div>
 </section>
 

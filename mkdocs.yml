@@ -4,42 +4,64 @@ nav:
   - 首页: index.md
   # 基础知识
   - 日常护理:
-    - 概述: blog/care/index.md
     - 新手入门: blog/care/beginner-guide.md
     - 清洁护理: blog/care/grooming.md
     - 室内养护: blog/care/indoor-care.md
   - 营养喂食:
-    - 概述: blog/nutrition/index.md
     - 喂食指南: blog/nutrition/food-guide.md
     - 营养建议: blog/nutrition/diet-tips.md
   - 行为解读:
-    - 概述: blog/behavior/index.md
     - 身体语言: blog/behavior/body-language.md
     - 行为训练: blog/behavior/training.md
   # 进阶内容
   - 医疗健康:
-    - 概述: blog/health/index.md
     - 常见疾病: blog/health/common-disease.md
     - 疫苗接种: blog/health/vaccination.md
     - 医疗资源: blog/health/medical-resources.md
   - 急救知识:
-    - 概述: blog/emergency/index.md
     - 基础急救: blog/emergency/first-aid.md
     - 案例分享: blog/emergency/cases.md
   - 行为训练:
-    - 概述: blog/training/index.md
     - 如厕训练: blog/training/toilet.md
     - 互动游戏: blog/training/play.md
     - 行为纠正: blog/training/correction.md
-  # 资源分享
-  - 优质资源:
-    - 概述: blog/resources/index.md
-    - 优质网站: blog/resources/websites.md
-    - 视频教程: blog/resources/youtube.md
-    - 书籍推荐: blog/resources/books.md
-    - 工具推荐: blog/resources/tools.md
+  - 流浪救助:
+    - 救助指南: blog/rescue/guide.md
+    - 救助站点: blog/rescue/stations.md
+    - TNR实践: blog/rescue/tnr.md
+    - 领养须知: blog/rescue/adoption.md
+  # 推荐资源
+  - 优质网站:
+    - 行为训练: blog/websites/behavior.md
+    - 社区论坛: blog/websites/community.md
+    - 医疗健康: blog/websites/medical.md
+    - 营养知识: blog/websites/nutrition.md
+    - 购物导航: blog/websites/shopping.md
+  - 推荐视频:
+    - 行为训练: blog/videos/behavior.md
+    - 品种介绍: blog/videos/breeds.md
+    - 日常护理: blog/videos/care.md
+    - 娱乐视频: blog/videos/entertainment.md
+    - 环境布置: blog/videos/environment.md
+    - 食品营养: blog/videos/food.md
+    - 美容护理: blog/videos/grooming.md
+    - 医疗相关: blog/videos/medical.md
+    - 营养饮食: blog/videos/nutrition.md
+    - 救助相关: blog/videos/rescue.md
+    - 训练教育: blog/videos/training.md
+  - 推荐书籍:
+    - 新手入门: blog/books/beginner.md
+    - 猫咪心理: blog/books/psychology.md
+    - 医疗健康: blog/books/medical.md
+    - 训练教育: blog/books/training.md
+    - 营养饮食: blog/books/nutrition.md
+  - 实用工具:
+    - 美容工具: blog/tools/grooming.md
+    - 医疗用品: blog/tools/medical.md
+    - 喂食工具: blog/tools/feeding.md
+    - 清洁用品: blog/tools/cleaning.md
+    - 玩具用品: blog/tools/toys.md
   - 经验分享:
-    - 概述: blog/experience/index.md
     - 养猫心得: blog/experience/tips.md
     - 案例分析: blog/experience/cases.md
     - 经验总结: blog/experience/summary.md
@@ -49,22 +71,22 @@ theme:
   language: 'zh'
   name: material
   icon:
-    repo: fontawesome/brands/github  # 替换默认的 Git 图标为爪印图标
+    repo: fontawesome/brands/git-alt  # Font Awesome 的 Git Alt 图标
   palette:
       - scheme: default  # 明亮模式配色
-        primary: teal    # 柔和的蓝绿色主色
-        accent: amber    # 温暖的琥珀色辅助色
+        primary: "#87ceeb"   # 天空蓝主色
+        accent: "#f7a8b8"    # 樱花粉辅助色
         toggle:
-          icon: material/weather-sunny  # 切换到暗模式时显示太阳图标
+          icon: material/weather-sunny
           name: 切换到暗模式
       - scheme: slate    # 暗模式配色
-        primary: deep purple  # 深紫色主色，低调且优雅
-        accent: light blue    # 辅助色为柔和的浅蓝色
+        primary: deep purple  # 深紫色主色
+        accent: deep purple   # 使用相同的深紫色作为辅助色
         toggle:
-          icon: material/weather-night  # 切换到亮模式时显示月亮图标
+          icon: material/weather-night
           name: 切换到明亮模式
   font:
-    text: Noto Serif SC  # 改为 Noto Serif SC
+    text: Noto Sans SC, Roboto
     code: Source Code Pro
   features:
     - navigation.tabs
@@ -82,8 +104,6 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-    - content.action.edit
-    - content.action.view
     - announce.dismiss
     - toc.follow         # 目录跟随滚动
     # - toc.integrate    # 将目录集成到导航面板中
@@ -101,18 +121,7 @@ plugins:
         - en
         - zh
   - macros
-  - blog:
-      blog_dir: blog
-      post_date_format: yyyy-MM-dd
-      post_url_format: "{date}/{slug}"
   - tags
-  - rss:
-      abstract_chars_count: 160
-      date_from_meta:
-        as_creation: date
-      enabled: true
-      feed_ttl: 1440
-      length: 20
 
 markdown_extensions:
   - meta   # 支持文章元数据
@@ -146,4 +155,8 @@ site_author: Freeman Kevin
 # 网站链接
 site_url: https://meowtopia.uk/
 # 版权信息
-copyright: "© 2024 ❤️ Freeman Kevin"
+copyright: "© 2025 Meowtopia"
+
+# 添加 GitHub 仓库信息
+# repo_url: https://github.com/FreemanKevin/Meowtopia
+# repo_name: FreemanKevin/Meowtopia
