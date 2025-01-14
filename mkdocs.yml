@@ -1,52 +1,100 @@
-site_name: Meowtopia
+site_name: <span class="site-name">Meowtopia</span>
 # GitHub库的名称
 repo_name: 'Meowtopia'
 # GitHub库的链接
 repo_url: 'https://github.com/FreemanKevin/Meowtopia'
 
 nav:
-  - Home: index.md
-  - About: about.md
+  - 首页: index.md
+  # 基础知识
+  - 日常护理:
+    - 概述: blog/care/index.md
+    - 新手入门: blog/care/beginner-guide.md
+    - 清洁护理: blog/care/grooming.md
+    - 室内养护: blog/care/indoor-care.md
+  - 营养喂食:
+    - 概述: blog/nutrition/index.md
+    - 喂食指南: blog/nutrition/food-guide.md
+    - 营养建议: blog/nutrition/diet-tips.md
+  - 行为解读:
+    - 概述: blog/behavior/index.md
+    - 身体语言: blog/behavior/body-language.md
+    - 行为训练: blog/behavior/training.md
+  # 进阶内容
+  - 医疗健康:
+    - 概述: blog/health/index.md
+    - 常见疾病: blog/health/common-disease.md
+    - 疫苗接种: blog/health/vaccination.md
+    - 医疗资源: blog/health/medical-resources.md
+  - 急救知识:
+    - 概述: blog/emergency/index.md
+    - 基础急救: blog/emergency/first-aid.md
+    - 案例分享: blog/emergency/cases.md
+  - 行为训练:
+    - 概述: blog/training/index.md
+    - 如厕训练: blog/training/toilet.md
+    - 互动游戏: blog/training/play.md
+    - 行为纠正: blog/training/correction.md
+  # 资源分享
+  - 优质资源:
+    - 概述: blog/resources/index.md
+    - 优质网站: blog/resources/websites.md
+    - 视频教程: blog/resources/youtube.md
+    - 书籍推荐: blog/resources/books.md
+    - 工具推荐: blog/resources/tools.md
+  - 经验分享:
+    - 概述: blog/experience/index.md
+    - 养猫心得: blog/experience/tips.md
+    - 案例分析: blog/experience/cases.md
+    - 经验总结: blog/experience/summary.md
+  - 关于我们: about.md
 
 theme:
-  language: 'zh'  # 设置语言为中文
+  language: 'zh'
   name: material
   icon:
-    repo: fontawesome/brands/github  # 使用 Font Awesome 的 GitHub 图标
-  
-  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#+palette.toggle.icon
-  palette: 
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep purple
-      accent: orange
-      toggle: 
-        icon: material/weather-night 
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo  
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to system preference
+    repo: fontawesome/brands/github  # 替换默认的 Git 图标为爪印图标
+  palette:
+      - scheme: default  # 明亮模式配色
+        primary: teal    # 柔和的蓝绿色主色
+        accent: amber    # 温暖的琥珀色辅助色
+        toggle:
+          icon: material/toggle-switch-off-outline  # 切换图标（暗模式）
+          name: 切换到暗模式
+      - scheme: slate    # 暗模式配色
+        primary: deep purple  # 深紫色主色，低调且优雅
+        accent: light blue    # 辅助色为柔和的浅蓝色
+        toggle:
+          icon: material/toggle-switch  # 切换图标（亮模式）
+          name: 切换到明亮模式
   font:
-    text: "Noto Serif SC, serif"
-    code: "Source Code Pro, DM Mono, Noto Serif SC, monospace"
+    text: Noto Serif SC  # 改为 Noto Serif SC
+    code: Source Code Pro
   features:
-    - header.autohide # 设置标题行自动隐藏
-    - palette-toggle  # 启用明亮/暗模式切换功能
-  logo: assets/favicon.svg  # 网站图标
-  
+    - navigation.tabs
+    - navigation.sections
+    # - navigation.tabs.sticky  # 固定标签导航栏
+    - navigation.top       # 返回顶部按钮
+    - navigation.tracking  # 在 URL 中跟踪当前位置
+    - navigation.footer     # 显示上一页/下一页导航
+    - navigation.indexes    # 支持章节索引页面
+    - navigation.instant  # 即时加载页面
+    - navigation.instant.prefetch  # 预加载链接页面
+    - navigation.instant.progress  # 显示加载进度条
+    - navigation.prune    # 修剪导航树
+    # - header.autohide
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.action.edit
+    - content.action.view
+    - announce.dismiss
+    - toc.follow         # 目录跟随滚动
+    # - toc.integrate    # 将目录集成到导航面板中
+    - content.code.copy
+  announce: false
+  logo: assets/favicon.svg
+  custom_dir: overrides
 
 
 
@@ -57,7 +105,25 @@ plugins:
         - en
         - zh
   - macros
-  
+  - blog:
+      blog_dir: blog
+      post_date_format: yyyy-MM-dd
+      post_url_format: "{date}/{slug}"
+  - tags
+  - rss:
+      abstract_chars_count: 160
+      date_from_meta:
+        as_creation: date
+      enabled: true
+      feed_ttl: 1440
+      length: 20
+
+markdown_extensions:
+  - meta   # 支持文章元数据
+  - toc    # 支持目录
+  - attr_list  # 添加这一行
+  - pymdownx.highlight    # 代码高亮
+  - pymdownx.superfences  # 支持代码块
 
 extra:
   social:
@@ -70,6 +136,10 @@ extra:
   favicon: assets/images/favicon.png
   extra_css:
     - styles/fonts.css  # 确保文件存在
+    - stylesheets/extra.css
+  comments:
+    enabled: true
+    discussion_url: https://github.com/FreemanKevin/Meowtopia/discussions/new?category=comments
 
 
 
@@ -82,4 +152,4 @@ site_author: Freeman Kevin
 # 网站链接
 site_url: https://meowtopia.uk/
 # 版权信息
-copyright: "© 2024 Freeman Kevin"
+copyright: "© 2024 ❤️ Freeman Kevin"

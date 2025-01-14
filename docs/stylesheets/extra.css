@@ -1,0 +1,192 @@
+/* 基础字体设置 */
+:root {
+    --md-text-font: "Source Code Pro", "Noto Serif SC", sans-serif;
+}
+
+/* 确保所有英文字符使用 Source Code Pro */
+* {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 代码块字体 */
+code, pre, kbd {
+    font-family: "Source Code Pro", monospace !important;
+}
+
+/* 导航和页脚 */
+.md-header,
+.md-tabs,
+.md-footer,
+.md-nav {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 确保链接中的英文也使用 Source Code Pro */
+a, a * {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 标题中的英文 */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Code Pro", "Noto Serif SC", sans-serif !important;
+}
+
+/* 评论区样式 */
+.comments {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="slate"] .comments {
+  background-color: var(--md-default-bg-color);
+}
+
+[data-md-color-scheme="default"] .comments {
+  background-color: var(--md-default-bg-color);
+}
+
+.giscus {
+  margin-top: 1rem;
+}
+
+/* 隐藏首页的编辑和查看源码按钮 */
+[data-md-component="hero"] ~ .md-content .md-content__button {
+    display: none !important;
+}
+
+/* 顶部导航菜单悬停效果 */
+.md-tabs__item {
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: center bottom;
+}
+
+.md-tabs__item:hover .md-tabs__link {
+    transform: scale(1.5);
+    display: inline-block;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* 当前激活的导航项样式 */
+.md-tabs__item--active:hover .md-tabs__link {
+    transform: scale(1.5);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+/* 顶部导航菜单样式 */
+.md-tabs__link {
+    font-size: 1.25rem !important;     /* 更大的字体大小 */
+    font-weight: 500;                   /* 稍微加粗 */
+    padding: 0.7rem 1rem;              /* 更大的内边距 */
+    transition: color 0.2s ease;        /* 只保留颜色过渡效果 */
+}
+
+/* 当前激活的导航项样式 */
+.md-tabs__link--active {
+    font-weight: 600;                   /* 当前项更粗一些 */
+}
+
+/* 确保有足够的空间 */
+.md-tabs__list {
+    padding: 0.7rem 0;                 /* 增加上下空间 */
+}
+
+/* 固定导航栏样式优化 */
+.md-header {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  transition: transform .4s cubic-bezier(.1,.7,.1,1), box-shadow .4s;
+}
+
+/* 固定标签导航栏 */
+.md-tabs {
+  position: fixed !important;
+  top: 3rem;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--md-primary-fg-color);
+}
+
+/* 调整主要内容区域的上边距 */
+.md-main {
+  margin-top: 7rem !important;
+}
+
+/* 优化固定导航栏的阴影效果 */
+.md-header--shadow {
+  box-shadow: 0 0 .2rem rgba(0,0,0,.1), 0 .2rem .4rem rgba(0,0,0,.2);
+}
+
+/* 确保导航栏在滚动时保持可见 */
+.md-header[data-md-state="shadow"] {
+  box-shadow: 0 0 .2rem rgba(0,0,0,.1), 0 .2rem .4rem rgba(0,0,0,.2);
+}
+
+/* 优化标签导航栏的显示效果 */
+.md-tabs[data-md-state="hidden"] {
+  transform: none !important;
+  transition: none !important;
+  opacity: 1 !important;
+  background-color: var(--md-primary-fg-color);
+}
+
+/* 优化移动端导航按钮样式 */
+.md-footer__button {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 确保导航文字在移动端显示 */
+.md-footer__title {
+  height: auto !important;
+  opacity: 1 !important;
+  max-height: none !important;
+}
+
+/* 优化移动端导航文字显示 */
+.md-footer__direction {
+  position: static !important;
+  height: auto !important;
+  opacity: 1 !important;
+  display: block !important;
+}
+
+/* 移动端导航标题样式 */
+.md-footer__link--prev .md-footer__title,
+.md-footer__link--next .md-footer__title {
+  display: block !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 76.1875em) {
+  .md-footer-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .md-footer__link {
+    display: flex !important;
+    padding: 0.5rem 1rem !important;
+    width: auto !important;
+  }
+  
+  .md-footer__title {
+    font-size: 0.8rem !important;
+    white-space: normal !important;
+    overflow: visible !important;
+  }
+  
+  .md-footer__direction {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.2rem !important;
+  }
+}

@@ -1,28 +1,54 @@
-## Meowtopia
+# Meowtopia
 
-### Quick Start
-```shell
-# clone the project
+一个专注于猫咪养护知识分享的网站，为每一位爱猫人士提供专业的养猫指南。
+
+## 功能特点
+
+- 响应式设计，支持移动端和桌面端
+- 明暗主题切换
+- 评论系统集成（基于 Giscus）
+- 博客文章系统
+- 搜索功能
+
+## 本地开发
+
+1. 克隆仓库：
+```bash
 git clone https://github.com/FreemanKevin/Meowtopia.git
 cd Meowtopia
-
-# install dependencies
-pip install -r requirements.txt
-
-# run the project
-mkdocs build
-mkdocs serve
-
-# update the themes
-vim mkdocs.yml
-
-# deploy the project
-mkdocs build
-mkdocs gh-deploy
-
-# commit the code
-git pull
-git add .
-git commit  -m "update files."
-git push
 ```
+
+2. 安装依赖：
+```bash
+pip install -r requirements.txt
+```
+
+3. 本地运行：
+```bash
+mkdocs serve
+```
+
+4. 访问 `http://127.0.0.1:8000` 查看效果
+
+## 部署
+
+本站使用 GitHub Pages 部署：
+
+```bash
+mkdocs gh-deploy
+```
+
+## 技术栈
+
+- MkDocs
+- Material for MkDocs
+- Python
+- Giscus 评论系统
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request
+
+## 许可证
+
+[MIT License](LICENSE)

@@ -37,3 +37,6 @@ mkdocs.yml.bak
 # 忽略挂载目录
 mnt/
 media/
+
+
+.cache/
