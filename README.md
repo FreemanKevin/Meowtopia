@@ -4,9 +4,8 @@
 
 ## 功能特点
 
-- 响应式设计，支持移动端和桌面端
+- 支持移动端和桌面端
 - 明暗主题切换
-- 评论系统集成（基于 Giscus）
 - 博客文章系统
 - 搜索功能
 
@@ -43,7 +42,6 @@ mkdocs gh-deploy
 - MkDocs
 - Material for MkDocs
 - Python
-- Giscus 评论系统
 
 ## 贡献
 
