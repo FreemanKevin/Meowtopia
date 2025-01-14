@@ -8,27 +8,37 @@ nav:
   - Home: index.md
   - About: about.md
 
-
-
-
 theme:
   language: 'zh'  # 设置语言为中文
   name: material
   icon:
-    repo: fontawesome/brands/github  # 替换默认的 Git 图标为爪印图标
-  palette:
-      - scheme: default  # 明亮模式配色
-        primary: teal    # 柔和的蓝绿色主色
-        accent: amber    # 温暖的琥珀色辅助色
-        toggle:
-          icon: material/toggle-switch-off-outline  # 切换图标（暗模式）
-          name: 切换到暗模式
-      - scheme: slate    # 暗模式配色
-        primary: deep purple  # 深紫色主色，低调且优雅
-        accent: light blue    # 辅助色为柔和的浅蓝色
-        toggle:
-          icon: material/toggle-switch  # 切换图标（亮模式）
-          name: 切换到明亮模式
+    repo: fontawesome/brands/github  # 使用 Font Awesome 的 GitHub 图标
+  
+  # https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#+palette.toggle.icon
+  palette: 
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: orange
+      toggle: 
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo  
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
   font:
     text: "Noto Serif SC, serif"
     code: "Source Code Pro, DM Mono, Noto Serif SC, monospace"
@@ -72,4 +82,4 @@ site_author: Freeman Kevin
 # 网站链接
 site_url: https://meowtopia.uk/
 # 版权信息
-copyright: "© 2024 ❤️ Freeman Kevin"
+copyright: "© 2024 Freeman Kevin"
