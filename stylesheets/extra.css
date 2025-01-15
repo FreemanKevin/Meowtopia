@@ -250,3 +250,54 @@ h1, h2, h3, h4, h5, h6 {
 code, pre {
   font-family: "Source Code Pro", "JetBrains Mono", monospace;
 }
+
+/* 基础样式 */
+.hero {
+  margin: 2rem auto;  /* 增加上下间距 */
+  padding: 4rem 1rem;
+  max-width: var(--md-content-width);  /* 使用与内容相同的最大宽度 */
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;  /* 添加圆角 */
+  overflow: hidden;  /* 确保背景图不超出圆角 */
+}
+
+.features-container {
+  margin: 0 auto;
+  padding: 2rem 0;  /* 移除左右内边距 */
+  max-width: var(--md-content-width);
+  background: var(--md-default-bg-color);
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0;  /* 移除内边距 */
+  margin: 0 auto;
+  width: 100%;  /* 确保宽度不超过父容器 */
+}
+
+.feature {
+  flex: 1;
+  min-width: 0;  /* 防止flex项目溢出 */
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+    margin: 1rem auto;
+  }
+  
+  .features-container {
+    padding: 2rem 0;
+    margin: 0 auto;
+  }
+  
+  .features {
+    flex-direction: column;
+    padding: 0 1rem;  /* 移动端添加一些内边距 */
+  }
+}
