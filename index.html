@@ -1409,19 +1409,56 @@
 /* 移动端优化 */
 @media (max-width: 768px) {
     .hero {
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
+        margin: 0 -1rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem !important;
+        padding: 0 1rem;
     }
 
     .features-container {
-        padding: 2rem 1rem;
+        padding: 2rem 0;
+        margin: 0;
+    }
+
+    .features {
+        flex-direction: column;
+        padding: 0 1rem;
+        gap: 1rem;
     }
 
     .feature {
-        margin: 0 1rem;
+        margin: 0;
+        padding: 1.5rem;
     }
 
-    .hero p {
-        white-space: normal;
+    .feature h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .hero-buttons a {
+        width: 80%;
+        max-width: 250px;
+        padding: 0.7rem 1rem;
     }
 }
 </style>
@@ -1431,23 +1468,23 @@
     <h2>Protecting Every Cat with Love and Knowledge</h2>
     <div class="hero-buttons">
         <a href="blog/care/beginner-guide/">开始阅读</a>
-        <a href="https://discord.gg/ePNtxruT" target="_blank">加入讨论</a>
+        <a href="https://discord.gg/ePNtxruT" target="_blank">参与讨论</a>
     </div>
 </section>
 
 <div class="features-container">
     <div class="features">
         <div class="feature">
-            <h2>🐱 基础知识</h2>
-            <p>包含日常护理、营养喂食、行为解读等基础知识，帮助新手快速掌握养猫要领。</p>
+            <h2>📖 基础知识</h2>
+            <p>日常护理、营养喂食、行为解读等基础知识，助你快速掌握养猫要领。</p>
         </div>
         <div class="feature">
             <h2>🏥 进阶内容</h2>
-            <p>涵盖医疗健康、急救知识、行为训练等进阶内容，提供全面的养猫进阶指导。</p>
+            <p>医疗健康、急救知识、行为训练等进阶内容，提供全面的养猫指导。</p>
         </div>
         <div class="feature">
-            <h2>📚 资源分享</h2>
-            <p>精选优质资源和经验分享，让每位猫咪主人都能找到有价值的养猫参考。</p>
+            <h2>🌟 资源分享</h2>
+            <p>精选优质资源和经验分享，为每位猫咪主人提供有价值的参考。</p>
         </div>
     </div>
 </div>
