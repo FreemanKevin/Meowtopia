@@ -6,13 +6,6 @@ A professional knowledge-sharing platform dedicated to cat care and companionshi
 ## Development
 
 ```shell
-# Clone repository
-git clone https://github.com/FreemanKevin/Meowtopia.git
-cd Meowtopia
-
-# Install dependencies
-pip install -r requirements.txt
-
 # Start local server
 mkdocs serve
 
