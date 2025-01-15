@@ -106,7 +106,7 @@ theme:
     - search.suggest
     - announce.dismiss
     - toc.follow         # 目录跟随滚动
-    # - toc.integrate    # 将目录集成到导航面板中
+    - toc.numbered
     - content.code.copy
   announce: false
   logo: assets/favicon.svg
@@ -125,10 +125,17 @@ plugins:
 
 markdown_extensions:
   - meta   # 支持文章元数据
-  - toc    # 支持目录
-  - attr_list  # 添加这一行
+  - toc:    # 支持目录
+      permalink: true  # 为标题添加永久链接
+      toc_depth: 3   # 目录深度，显示到 h3
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.highlight    # 代码高亮
-  - pymdownx.superfences  # 支持代码块
 
 extra:
   social:
