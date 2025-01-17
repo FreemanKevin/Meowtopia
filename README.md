@@ -144,7 +144,6 @@ black .
 
 - [MkDocs](https://www.mkdocs.org/) for the documentation framework
 - [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) for the beautiful theme
-- All our [contributors](https://github.com/FreemanKevin/Meowtopia/graphs/contributors)
 
 
 ## License
