@@ -42,6 +42,7 @@ RUN \
 # 复制项目文件
 COPY mkdocs.yml .
 COPY docs docs/
+COPY overrides overrides/
 
 # 构建静态文件
 RUN mkdocs build
