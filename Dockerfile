@@ -4,12 +4,10 @@ FROM python:3.11-alpine3.19 AS build
 ENV PACKAGES=/usr/local/lib/python3.11/site-packages
 ENV PYTHONDONTWRITEBYTECODE=1
 
-# 设置构建目录
-WORKDIR /tmp
+# 设置工作目录
+WORKDIR /docs
 
-# 复制必要的项目文件
-COPY mkdocs.yml .
-COPY docs docs/
+# 首先复制依赖文件
 COPY requirements.txt .
 
 # 安装依赖并清理
@@ -40,6 +38,10 @@ RUN \
     -exec rm -f {} \; \
 && \
   git config --system --add safe.directory /docs
+
+# 复制项目文件
+COPY mkdocs.yml .
+COPY docs docs/
 
 # 构建静态文件
 RUN mkdocs build
